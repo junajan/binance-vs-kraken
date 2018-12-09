@@ -1,0 +1,31 @@
+{
+  "name": "binance-vs-kraken",
+  "version": "1.0.0",
+  "description": "Periodical saving of selected crypto currency rates",
+  "private": true,
+  "main": "lib/app.js",
+  "scripts": {
+    "start": "node_modules/.bin/forever start -m 20 -a -l /var/log/cryptorates.log --uid 'cryptorates' lib/app.js",
+    "status": "node_modules/.bin/forever list",
+    "stop": "node_modules/.bin/forever stop cryptorates",
+    "restart": "npm stop; npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junajan/binance-vs-kraken.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junajan/binance-vs-kraken/issues"
+  },
+  "homepage": "https://github.com/junajan/binance-vs-kraken#readme",
+  "dependencies": {
+    "bluebird": "^3.5.3",
+    "forever": "^0.15.3",
+    "kraken-api": "^1.0.0",
+    "lodash": "^4.17.11",
+    "mysql": "^2.16.0",
+    "node-binance-api": "^0.8.7"
+  }
+}

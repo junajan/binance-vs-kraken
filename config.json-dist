@@ -1,0 +1,27 @@
+{
+  "kraken": {
+    "secret": "",
+    "key": ""
+  },
+  "binance": {
+    "key": "",
+    "secret": ""
+  },
+  "mysql" : {
+    "user": "",
+    "password": "",
+    "database": "cryptostream",
+    "table": "crypto_rates",
+    "host": "localhost",
+    "showSQL": false
+  },
+  "interval": 60000,
+  "pairs": {
+    "kraken": [
+      "XXBTZUSD"
+    ],
+    "binance": [
+      "XRPUSDT"
+    ]
+  }
+}
